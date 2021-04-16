@@ -1,0 +1,12 @@
+.header {
+    background: #F6F6F6;
+}
+
+.header__nav>* {
+    flex-direction: column;
+}
+
+nav ul:not(.header__burger_active) {
+    height: 0;
+    opacity: 0;
+}

@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --text-color: #252B42;
+    --secondary-color: #737373;
+}
+
+.body {
+    color: var(--text-color);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+.link {
+    color: inherit;
+    text-decoration: none;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px;
+    margin: auto;
+    box-sizing: border-box;
+
+    z-index: 3;
+}
+
+.header__brand {
+    font-size: 1.2em;
+    margin: 0;
+}
+
+.header__nav {
+    width: 100%;
+    font-size: 1.5em;
+    color: var(--secondary-color);
+}
+
+.list_default {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.header__nav>* {
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+}
+
+.header__nav>*>*{
+    margin: 0.75em 0.5em;
+}
+
+
+/* add */
+.header__burger {
+    float: right;
+    position: relative;
+    z-index: 2;
+
+    margin: 5px;
+    /* margin-top: -50%; */
+
+    width: 25px;
+    height: 15px;
+
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.header__burger::before,
+.header__burger::after,
+.header__burger>* {
+    background: var(--secondary-color);
+
+    position: absolute;
+    height: 10%;
+
+    transition: transform, top, left, right, width;
+    transition-duration: 0.2s;
+    transition-timing-function: linear;
+    will-change: transform;
+}
+
+.header__burger>* {
+    width: 75%;
+    top: 50%;
+    right: 0;
+}
+
+.header__burger::before,
+.header__burger::after {
+    content: '';
+}
+.header__burger::before {
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+.header__burger::after {
+    width: 45%;
+    top: 100%;
+    right: 0;
+}
+
+.header__burger.header__burger_active::before  {
+    top: 20%;
+    left: 6%;
+    width: 51%;
+    transform: rotate(45deg);
+  }
+.header__burger.header__burger_active>* {
+    width: 100%;
+    transform: rotate(-45deg);
+}
+.header__burger.header__burger_active::after  {
+    width: 49%;
+    right: 7%;
+    top: 78%;
+    transform: rotate(45deg);
+}
