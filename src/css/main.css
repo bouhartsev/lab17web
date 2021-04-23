@@ -26,6 +26,7 @@
     padding: 40px;
     margin: auto;
     box-sizing: border-box;
+    max-height: 100%;
 
     z-index: 3;
 }
@@ -39,6 +40,13 @@
     width: 100%;
     font-size: 1.5em;
     color: var(--secondary-color);
+    max-height: 500px;
+
+    transition: max-height, opacity;
+    transition-duration: 0.2s;
+    transition-timing-function: linear;
+
+    overflow: hidden;
 }
 
 .list_default {
@@ -51,21 +59,20 @@
     box-sizing: border-box;
     display: flex;
     align-items: center;
+
+    padding: 2em 0;
 }
 
 .header__nav>*>*{
-    margin: 0.75em 0.5em;
+    margin: 0.5em 0.75em;
 }
 
-
-/* add */
 .header__burger {
     float: right;
     position: relative;
     z-index: 2;
 
-    margin: 5px;
-    /* margin-top: -50%; */
+    margin: 7px 0;
 
     width: 25px;
     height: 15px;
@@ -111,7 +118,7 @@
 
 .header__burger.header__burger_active::before  {
     top: 20%;
-    left: 6%;
+    left: 8%;
     width: 51%;
     transform: rotate(45deg);
   }

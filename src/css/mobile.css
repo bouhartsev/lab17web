@@ -6,7 +6,15 @@
     flex-direction: column;
 }
 
-nav ul:not(.header__burger_active) {
-    height: 0;
+.header__nav_active-not {
+    max-height: 0;
     opacity: 0;
+}
+
+@media (max-height: 530px) {
+    .header {
+        overflow-y: scroll;
+        -ms-overflow-style: none;
+    }
+    .header::-webkit-scrollbar { width: 0; }
 }
