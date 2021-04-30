@@ -2,6 +2,10 @@
     background: #F6F6F6;
 }
 
+.header__nav {
+    font-size: 1.5em;
+}
+
 .header__nav>* {
     flex-direction: column;
 }
@@ -9,6 +13,23 @@
 .header__nav_active-not {
     max-height: 0;
     opacity: 0;
+}
+
+.about__heading {
+    text-align: center;
+    margin: 80px 35px 0;
+    font-size: 2em;
+}
+
+.about__p {
+    text-align: center;
+    margin: 40px 70px;
+}
+
+.about__btn, .about__link {
+    display: block;
+    width: fit-content;
+    margin: 0 auto 25px;
 }
 
 @media (max-height: 530px) {

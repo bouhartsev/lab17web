@@ -1,5 +1,9 @@
 $(document).ready(function() {
-    $("main").css('padding-top', $("header").outerHeight()+'px');
+    function makeNavPadding(){
+        $(".section__about").css('padding-top', $("header").outerHeight()+'px');
+    }
+    
+    makeNavPadding();
 
     let is_burger_active = ($(".header__burger").hasClass('header__burger_active'))?true:false;
     function clickBurger() {
@@ -14,8 +18,9 @@ $(document).ready(function() {
             $('body').css({'position': 'fixed', 'overflow-y': 'scroll', 'top': (-(document.documentElement.scrollTop)) + 'px' });
             is_burger_active = true;
         }
-           
     }
+
+    $(window).resize(makeNavPadding);
 
     $(".header__burger").click(clickBurger);
 });

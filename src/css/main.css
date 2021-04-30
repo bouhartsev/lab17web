@@ -2,7 +2,9 @@
 
 :root {
     --text-color: #252B42;
+    --primary-color: #FFA62B;
     --secondary-color: #737373;
+    --blue-color: #00A0C1;
 }
 
 .body {
@@ -38,7 +40,6 @@
 
 .header__nav {
     width: 100%;
-    font-size: 1.5em;
     color: var(--secondary-color);
     max-height: 500px;
 
@@ -65,6 +66,10 @@
 
 .header__nav>*>*{
     margin: 0.5em 0.75em;
+}
+
+.header__nav>*>*:hover {
+    color: #C4C4C4;
 }
 
 .header__burger {
@@ -132,3 +137,76 @@
     top: 78%;
     transform: rotate(45deg);
 }
+
+.section__about {
+    background: whitesmoke url('../img/back_girl.png') no-repeat center;
+    background-size: cover;
+}
+
+.about__btn, .about__link {
+    box-sizing: border-box;
+
+    border-radius: 100em;
+    padding: 15px 35px;
+    font-size: 0.7em;
+    font-weight: bold;
+
+    margin-bottom: 25px;
+}
+
+.about__btn {
+    color:white;
+    background: var(--primary-color);
+    border: none;
+
+    font-family: inherit;
+    cursor: pointer;
+}
+
+.about__link {
+    color: var(--blue-color);
+    border: 2px var(--blue-color) solid;
+}
+
+.about__features {
+    width: fit-content;
+    margin: 25px auto;
+    padding-bottom: 80px;
+
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+}
+
+.about__feature {
+    background: white;
+
+    box-sizing: border-box;
+    padding: 35px 40px;
+    margin-top: 30px;
+    width: 330px;
+}
+
+.feature__icon {
+    fill: var(--blue-color);
+}
+
+.feature__heading {
+    margin: 15px 0;
+}
+
+.feature__p {
+    margin: 0;
+    font-size: 0.7em;
+}
+
+.about__feature:last-of-type {
+    color: white;
+    background: var(--blue-color);
+}
+
+.about__feature:last-of-type .feature__icon {
+    fill: white;
+}
+
