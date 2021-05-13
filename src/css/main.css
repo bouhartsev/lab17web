@@ -13,6 +13,9 @@
     font-size: 20px;
     padding: 0;
     margin: 0;
+
+    max-width: 100%;
+    overflow-x: hidden;
 }
 
 .link {
@@ -25,6 +28,7 @@
     top: 0;
     left: 0;
     width: 100%;
+    height: max-content;
     padding: 40px;
     margin: auto;
     box-sizing: border-box;
@@ -72,17 +76,25 @@
     color: #C4C4C4;
 }
 
-.header__burger {
-    float: right;
+.header__search, .header__cart, .header__burger {
     position: relative;
+    float: right;
     z-index: 2;
+    cursor: pointer;
+    color: var(--secondary-color);
+}
 
+.header__search, .header__cart {
+    margin: 2px 20px 0 0;
+    fill: var(--secondary-color);
+}
+
+.header__burger {
     margin: 7px 0;
 
     width: 25px;
     height: 15px;
 
-    cursor: pointer;
     -webkit-tap-highlight-color: transparent;
 }
 
@@ -138,6 +150,11 @@
     transform: rotate(45deg);
 }
 
+.section {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
 .section__about {
     background: whitesmoke url('../img/back_girl.png') no-repeat center;
     background-size: cover;
@@ -184,8 +201,10 @@
 
     box-sizing: border-box;
     padding: 35px 40px;
-    margin-top: 30px;
+    /* margin-top: 30px; */
+    margin: 30px 15px 0;
     width: 330px;
+    max-width: 80vw;
 }
 
 .feature__icon {
@@ -196,7 +215,7 @@
     margin: 15px 0;
 }
 
-.feature__p {
+.paragraph {
     margin: 0;
     font-size: 0.7em;
 }
@@ -210,3 +229,59 @@
     fill: white;
 }
 
+.section__why {
+    background: #F3F3F3;
+}
+
+.section__heading {
+    text-align: center;
+}
+
+.p__description {
+    margin: auto;
+    text-align: center;
+}
+
+.p__description, .why__feature_strong {
+    color: var(--secondary-color);
+}
+
+.why__feature_strong {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 0.8em;
+}
+
+.why__features {
+    margin: 75px auto 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.why__feature {
+    box-sizing: border-box;
+    background: white;
+    width: 230px;
+    margin: 30px 20px 0;
+
+    padding: 30px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.section__why>.section__heading {
+    margin-top: 50px;
+    margin-bottom: 15px;
+}
+
+.why__nums {
+    font-size: 2.9em;
+}
+
+.why__feature>* {
+    margin: 5px 0;
+    font-weight: bold;
+}

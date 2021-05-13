@@ -15,6 +15,10 @@
     opacity: 0;
 }
 
+.section__about {
+    padding-bottom: 100px;
+}
+
 .about__heading {
     text-align: center;
     margin: 80px 35px 0;
@@ -38,4 +42,10 @@
         -ms-overflow-style: none;
     }
     .header::-webkit-scrollbar { width: 0; }
+}
+
+@media (max-width: 300px) {
+    .body {
+        font-size: 0.7em;
+    }
 }
