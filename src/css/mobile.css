@@ -21,8 +21,7 @@
 
 .about__heading {
     text-align: center;
-    margin: 80px 35px 0;
-    font-size: 2em;
+    margin: 80px auto 0;
 }
 
 .about__p {
@@ -34,6 +33,17 @@
     display: block;
     width: fit-content;
     margin: 0 auto 25px;
+}
+
+.about__heading, .section__heading {
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 2em;
+}
+
+.p__description {
+    max-width: 60%;
 }
 
 @media (max-height: 530px) {

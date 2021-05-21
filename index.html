@@ -50,10 +50,10 @@
         <strong class="header__brand"><a class="link" href="./">Indicorp</a></strong>
         <nav class="header__nav header__nav_active-not">
             <ul class="list_default">
-                <li><a class="link" href="/home">Home</a></li>
-                <li><a class="link" href="/product">Product</a></li>
-                <li><a class="link" href="/pricing">Pricing</a></li>
-                <li><a class="link" href="/contact">Contact</a></li>
+                <li><a class="link" href="/home" target="_blank">Home</a></li>
+                <li><a class="link" href="/product" target="_blank">Product</a></li>
+                <li><a class="link" href="/pricing" target="_blank">Pricing</a></li>
+                <li><a class="link" href="/contact" target="_blank">Contact</a></li>
             </ul>
         </nav>
     </header>
@@ -90,7 +90,7 @@
                     <path d="M44.5679 0.0111084H3.43234C2.52347 0.0120205 1.65208 0.375302 1.00941 1.02123C0.366737 1.66715 0.00528678 2.54295 0.00437927 3.45643V34.4643C0.00528678 35.3778 0.366737 36.2536 1.00941 36.8995C1.65208 37.5454 2.52347 37.9087 3.43234 37.9096H44.5679C45.4766 37.9082 46.3477 37.5448 46.9903 36.899C47.6329 36.2532 47.9945 35.3776 47.9958 34.4643V3.45643C47.9949 2.54295 47.6335 1.66715 46.9908 1.02123C46.3481 0.375302 45.4767 0.0120205 44.5679 0.0111084ZM3.43234 3.45643H22.2861V34.4643H3.43234V3.45643ZM25.7141 34.4643V3.45643H44.5679L44.5713 34.4643H25.7141Z"/>
                     </g>
                 </svg>
-                <h3>Business Growing</h3>
+                <h3 class="feature__heading">Business Growing</h3>
                 <p class="paragraph">the quick fox jumps over the lazy dog</p>
             </div>
         </div>
@@ -99,9 +99,9 @@
     <section class="section section__why">
         <h2 class="section__heading">WHY CHOOSE US</h2>
         <p class="paragraph p__description">Problems trying to resolve the conflict between the two major realms of Classical physics: Newtonian mechanics</p>
-        <div class="why__features">
-            <div class="why__feature">
-                <svg width="48" height="45" viewBox="0 0 48 45" xmlns="http://www.w3.org/2000/svg" class="feature__icon">
+        <div class="why__cards">
+            <div class="card why__card">
+                <svg width="48" height="45" viewBox="0 0 48 45" xmlns="http://www.w3.org/2000/svg" class="card__icon">
                     <g>
                     <path d="M23.8406 20.8023C28.1448 20.8023 31.4925 17.3069 31.4925 13.0171C31.4925 8.72739 27.9854 5.39091 23.6812 5.39091C19.377 5.39091 16.0293 8.88627 16.0293 13.0171C16.0293 17.3069 19.5364 20.8023 23.8406 20.8023ZM23.6812 8.56851C23.8406 8.56851 23.8406 8.56851 23.6812 8.56851C26.2318 8.56851 28.3042 10.6339 28.3042 13.176C28.3042 15.7181 26.2318 17.6247 23.6812 17.6247C21.1306 17.6247 19.2176 15.5592 19.2176 13.176C19.2176 10.6339 21.29 8.56851 23.6812 8.56851Z" fill="#00A0C1"/>
                     <path d="M47.4339 19.8487C44.405 17.1477 40.4196 15.7178 36.2749 15.8767H34.9995C34.6807 17.1477 34.2025 18.2599 33.5648 19.2132C34.5213 19.0543 35.3184 19.0543 36.2749 19.0543C39.3037 18.8954 42.3326 19.8487 44.7238 21.5964V33.0357H47.9121V20.3253L47.4339 19.8487Z" fill="#00A0C1"/>
@@ -112,30 +112,63 @@
                     </g>
                 </svg>
                 <span class="why__nums">3K</span>
-                <strong class="why__feature_strong">COUNTRIES WORLDWIDE</strong>
+                <strong class="why__card_strong">COUNTRIES WORLDWIDE</strong>
             </div>
-            <div class="why__feature">
-                <svg width="48" height="27" viewBox="0 0 48 27" xmlns="http://www.w3.org/2000/svg" class="feature__icon">
+            <div class="card why__card">
+                <svg width="48" height="27" viewBox="0 0 48 27" xmlns="http://www.w3.org/2000/svg" class="card__icon">
                     <path d="M43.1502 12.2821C42.5747 12.2863 42.0046 12.3961 41.4674 12.6063L35.7271 7.82161C35.8683 7.29999 35.9689 6.75888 35.9689 6.18852C35.9689 2.81022 33.3022 0.0949097 29.9844 0.0949097C26.6666 0.0949097 24 2.81022 24 6.18852C24 7.15375 24.2393 8.05316 24.6271 8.8624L17.6636 17.2423C17.3849 17.1892 17.1022 17.1607 16.8186 17.157C16.3901 17.157 15.9856 17.2301 15.593 17.3374L9.45773 11.0902C9.56545 10.6929 9.63726 10.281 9.63726 9.84468C9.63726 7.144 7.50201 4.9698 4.8497 4.9698C2.19739 4.9698 0.0621338 7.144 0.0621338 9.84468C0.0621338 12.5454 2.19739 14.7196 4.8497 14.7196C5.27819 14.7196 5.68273 14.6464 6.07532 14.5392L12.2106 20.7864C12.0955 21.1913 12.0351 21.6104 12.031 22.0319C12.031 24.7326 14.1663 26.9068 16.8186 26.9068C19.4709 26.9068 21.6062 24.7326 21.6062 22.0319C21.6062 21.4542 21.4913 20.9107 21.3117 20.3964L28.2848 12.0067C28.8282 12.1676 29.3908 12.2821 29.9844 12.2821C30.9291 12.2768 31.8589 12.042 32.6966 11.5972L38.4393 16.3819C38.3942 16.6379 38.3686 16.897 38.3627 17.157C38.3627 19.8577 40.4979 22.0319 43.1502 22.0319C45.8025 22.0319 47.9378 19.8577 47.9378 17.157C47.9378 14.4563 45.8025 12.2821 43.1502 12.2821Z"/>
                 </svg>
                 <span class="why__nums">45</span>
-                <strong class="why__feature_strong">HAPPY CUSTOMERS</strong>
+                <strong class="why__card_strong">HAPPY CUSTOMERS</strong>
             </div>
-            <div class="why__feature">
-                <svg width="36" height="48" viewBox="0 0 36 48" xmlns="http://www.w3.org/2000/svg" class="feature__icon">
+            <div class="card why__card">
+                <svg width="36" height="48" viewBox="0 0 36 48" xmlns="http://www.w3.org/2000/svg" class="card__icon">
                     <path d="M9.06411 33.9949C8.25304 33.1802 8.67584 33.4099 6.71958 32.8839C5.83197 32.6449 5.05171 32.1855 4.34611 31.6352L0.111574 42.0639C-0.298159 43.0736 0.467174 44.1705 1.55171 44.1292L6.46944 43.9408L9.85184 47.5296C10.5985 48.3208 11.9089 48.0742 12.3186 47.0646L17.1766 35.1002C16.1649 35.6664 15.0421 35.9983 13.881 35.9983C12.061 35.9983 10.3512 35.2867 9.06411 33.9949ZM35.7276 42.0639L31.493 31.6352C30.7874 32.1864 30.0072 32.6449 29.1196 32.8839C27.153 33.4127 27.5842 33.1821 26.775 33.9949C25.488 35.2867 23.7772 35.9983 21.9572 35.9983C20.7961 35.9983 19.6733 35.6655 18.6616 35.1002L23.5196 47.0646C23.9293 48.0742 25.2406 48.3208 25.9864 47.5296L29.3697 43.9408L34.2874 44.1292C35.372 44.1705 36.1373 43.0727 35.7276 42.0639ZM24.5462 31.8733C25.9724 30.4155 26.1357 30.5411 28.1666 29.9852C29.463 29.6299 30.4766 28.5939 30.8238 27.2683C31.522 24.6058 31.3409 24.9274 33.2458 22.9792C34.195 22.0089 34.5656 20.5942 34.2184 19.2686C33.5212 16.608 33.5202 16.9792 34.2184 14.3158C34.5656 12.9902 34.195 11.5755 33.2458 10.6052C31.3409 8.65706 31.522 8.97769 30.8238 6.31613C30.4766 4.9905 29.463 3.95456 28.1666 3.59925C25.5645 2.88581 25.8781 3.07238 23.9713 1.12331C23.0221 0.153002 21.638 -0.226685 20.3416 0.128627C17.7404 0.841127 18.1034 0.842064 15.4976 0.128627C14.2012 -0.226685 12.817 0.152065 11.8678 1.12331C9.96291 3.07144 10.2765 2.88581 7.67344 3.59925C6.37704 3.95456 5.36344 4.9905 5.01624 6.31613C4.31904 8.97769 4.49917 8.65706 2.59424 10.6052C1.64504 11.5755 1.27357 12.9902 1.62171 14.3158C2.31891 16.9746 2.31984 16.6033 1.62171 19.2677C1.27451 20.5933 1.64504 22.008 2.59424 22.9792C4.49917 24.9274 4.31811 24.6058 5.01624 27.2683C5.36344 28.5939 6.37704 29.6299 7.67344 29.9852C9.76224 30.5571 9.91811 30.4671 11.2929 31.8733C12.5277 33.1361 14.4513 33.3621 15.9353 32.4189C16.5287 32.0405 17.2171 31.8396 17.92 31.8396C18.623 31.8396 19.3113 32.0405 19.9048 32.4189C21.3878 33.3621 23.3114 33.1361 24.5462 31.8733ZM9.11451 16.4946C9.11451 11.523 13.0569 7.49269 17.9196 7.49269C22.7822 7.49269 26.7246 11.523 26.7246 16.4946C26.7246 21.4661 22.7822 25.4964 17.9196 25.4964C13.0569 25.4964 9.11451 21.4661 9.11451 16.4946Z"/>
                 </svg>
                 <span class="why__nums">12+</span>
-                <strong class="why__feature_strong">AWARD WINNING</strong>
+                <strong class="why__card_strong">AWARD WINNING</strong>
             </div>
-            <div class="why__feature">
-                <svg width="48" height="41" viewBox="0 0 48 41" xmlns="http://www.w3.org/2000/svg" class="feature__icon">
+            <div class="card why__card">
+                <svg width="48" height="41" viewBox="0 0 48 41" xmlns="http://www.w3.org/2000/svg" class="card__icon">
                     <path d="M42.5886 8.52529H37.519V3.45567C37.519 2.55931 37.1629 1.69966 36.5291 1.06583C35.8952 0.432007 35.0356 0.0759277 34.1392 0.0759277H13.8608C12.9644 0.0759277 12.1047 0.432007 11.4709 1.06583C10.8371 1.69966 10.481 2.55931 10.481 3.45567V8.52529H5.41139C4.06684 8.52529 2.77736 9.05941 1.82662 10.0102C0.875886 10.9609 0.341766 12.2504 0.341766 13.5949V37.2531C0.341766 38.1495 0.697846 39.0092 1.33167 39.643C1.9655 40.2768 2.82515 40.6329 3.72151 40.6329H44.2785C45.1748 40.6329 46.0345 40.2768 46.6683 39.643C47.3021 39.0092 47.6582 38.1495 47.6582 37.2531V13.5949C47.6582 12.2504 47.1241 10.9609 46.1734 10.0102C45.2226 9.05941 43.9331 8.52529 42.5886 8.52529ZM13.8608 3.45567H34.1392V8.52529H13.8608V3.45567ZM44.2785 37.2531H3.72151V22.0443H17.2405V30.4936H30.7595V22.0443H44.2785V37.2531ZM20.6202 22.0443H27.3797V27.1139H20.6202V22.0443ZM3.72151 18.6645V13.5949C3.72151 13.1467 3.89955 12.7169 4.21647 12.4C4.53338 12.0831 4.9632 11.905 5.41139 11.905H42.5886C43.0368 11.905 43.4666 12.0831 43.7835 12.4C44.1004 12.7169 44.2785 13.1467 44.2785 13.5949V18.6645H3.72151Z"/>
                 </svg>
                 <span class="why__nums">1.5K</span>
-                <strong class="why__feature_strong">CASES DONE</strong>
+                <strong class="why__card_strong">CASES DONE</strong>
             </div>
         </div>
+    </section>
+
+    <section class="section section__advice">
+        <h2 class="section__heading">Practice Advice</h2>
+        <p class="paragraph p__description">Problems trying to resolve the conflict between the two major realms of Classical physics: Newtonian mechanics</p>
+        <div class="advice__cards">
+            <div class="card advice__card">
+                <strong class="card__heading">A single source of truth</strong>
+                <p class="paragraph">Newton thought that light was made up of particles, but then it was discovered </p>
+                <img src="src/img/advice1.png" class="advice__image" alt="Girl works">
+            </div>
+            <div class="card advice__card">
+                <strong class="card__heading">Fastest way to organize</strong>
+                <p class="paragraph">“Quantum mechanics” is the description of the behaviour of matter</p>
+                <img src="src/img/advice2.png" class="advice__image" alt="Two girls look at laptop">
+            </div>
+            <div class="card advice__card">
+                <strong class="card__heading">Fastest way to take action</strong>
+                <p class="paragraph">They describe a universe consisting of bodies moving</p>
+                <img src="src/img/advice3.png" class="advice__image" alt="Get shit done.">
+            </div>
+            <div class="card advice__card">
+                <strong class="card__heading">Work better together</strong>
+                <p class="paragraph">They finally obtained a consistent description of the behaviour </p>
+                <img src="src/img/advice4.png" class="advice__image" alt="Work place">
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <h2 class="section__heading">We take care customers our all expert here.</h2>
+        <p class="paragraph p__description">Problems trying to resolve the conflict between the two major realms of Classical physics: Newtonian mechanics</p>
+        
     </section>
     
     </main>

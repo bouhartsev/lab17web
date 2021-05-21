@@ -207,11 +207,11 @@
     max-width: 80vw;
 }
 
-.feature__icon {
+.feature__icon, .card__icon {
     fill: var(--blue-color);
 }
 
-.feature__heading {
+.feature__heading, .card__heading {
     margin: 15px 0;
 }
 
@@ -229,7 +229,7 @@
     fill: white;
 }
 
-.section__why {
+.section__why, .section__advice {
     background: #F3F3F3;
 }
 
@@ -242,24 +242,24 @@
     text-align: center;
 }
 
-.p__description, .why__feature_strong {
+.p__description, .why__card_strong {
     color: var(--secondary-color);
 }
 
-.why__feature_strong {
+.why__card_strong {
     text-transform: uppercase;
     text-align: center;
     font-size: 0.8em;
 }
 
-.why__features {
-    margin: 75px auto 20px;
+.why__cards, .advice__cards {
+    margin: 45px auto 20px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
 
-.why__feature {
+.card {
     box-sizing: border-box;
     background: white;
     width: 230px;
@@ -272,6 +272,11 @@
     justify-content: space-between;
 }
 
+.card__heading {
+    font-size: 0.8em;
+    margin-top: 0;
+}
+
 .section__why>.section__heading {
     margin-top: 50px;
     margin-bottom: 15px;
@@ -281,7 +286,15 @@
     font-size: 2.9em;
 }
 
-.why__feature>* {
+.why__card>* {
     margin: 5px 0;
     font-weight: bold;
+}
+
+.advice__card {
+    padding-bottom: 0;
+}
+
+.advice__image {
+    margin-top: 30px;
 }
