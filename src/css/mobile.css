@@ -46,6 +46,12 @@
     max-width: 60%;
 }
 
+.expert__video, .expert__text {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 @media (max-height: 530px) {
     .header {
         overflow-y: scroll;
