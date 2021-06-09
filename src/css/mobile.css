@@ -52,6 +52,18 @@
     margin-right: auto;
 }
 
+.section__clients {
+    flex-direction: column;
+}
+
+.subscribe__form {
+    text-align: center;
+}
+
+.subscribe__input {
+    margin-top: 30px;
+}
+
 @media (max-height: 530px) {
     .header {
         overflow-y: scroll;
