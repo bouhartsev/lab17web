@@ -52,7 +52,7 @@
     margin-right: auto;
 }
 
-.section__clients, .contact__cards {
+.section__clients, .contact__cards, .section__footer {
     flex-direction: column;
 }
 
