@@ -51,11 +51,10 @@
 }
 
 .header__nav {
-    width: 100%;
     color: var(--secondary-color);
     max-height: 500px;
 
-    transition: max-height, opacity;
+    transition: max-height, opacity, background-color;
     transition-duration: 0.2s;
     transition-timing-function: linear;
 
@@ -72,12 +71,6 @@
     box-sizing: border-box;
     display: flex;
     align-items: center;
-
-    padding: 2em 0;
-}
-
-.header__nav>*>*{
-    margin: 0.5em 0.75em;
 }
 
 .header__nav>*>*:hover {
@@ -95,6 +88,10 @@
 .header__search, .header__cart {
     margin: 2px 20px 0 0;
     fill: var(--secondary-color);
+}
+
+.header__search:hover, .header__cart:hover {
+    fill: #C4C4C4;
 }
 
 .header__burger {
@@ -191,6 +188,7 @@
 .about__link {
     color: var(--blue-color);
     border: 2px var(--blue-color) solid;
+    white-space: nowrap;
 }
 
 .about__features {

@@ -1,4 +1,30 @@
 
+.header__fixed_onscroll {
+    background-color: white;
+    box-shadow: black 0 0 50px -20px;
+}
+
+.header__nav {
+    margin-left: 50px;
+    display: inline-block;
+    vertical-align: text-bottom;
+}
+
+.header__nav>*>*{
+    margin: 0 0.75em;
+}
+
+.about__banner {
+    /* min-width: 50%; */
+    width: 50%;
+    min-width: 300px;
+    padding: 40px;
+}
+
+.about__heading {
+    font-size: 2.9em;
+}
+
 .expert__video {
     margin-top: 100px;
     margin-bottom: 50px;
