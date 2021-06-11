@@ -3,11 +3,17 @@
 }
 
 .header__nav {
+    width: 100%;
     font-size: 1.5em;
 }
 
 .header__nav>* {
     flex-direction: column;
+    padding: 2em 0;
+}
+
+.header__nav>*>*{
+    margin: 0.5em 0.75em;
 }
 
 .header__nav_active-not {
@@ -21,8 +27,7 @@
 
 .about__heading {
     text-align: center;
-    margin: 80px 35px 0;
-    font-size: 2em;
+    margin: 80px auto 0;
 }
 
 .about__p {
@@ -34,6 +39,47 @@
     display: block;
     width: fit-content;
     margin: 0 auto 25px;
+}
+
+.about__heading, .section__heading {
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 2em;
+}
+
+.p__description {
+    max-width: 60%;
+}
+
+.expert__video, .expert__text {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.section__clients, .contact__cards, .section__footer {
+    flex-direction: column;
+}
+
+.section__subscribe {
+    padding-bottom: 0;
+}
+
+.subscribe__form {
+    text-align: center;
+}
+
+.subscribe__label {
+    display: block;
+}
+
+.subscribe__input {
+    margin-top: 30px;
+}
+
+.contact-us__btn {
+    margin-top: 50px;
 }
 
 @media (max-height: 530px) {
