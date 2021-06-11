@@ -20,6 +20,17 @@
 
     max-width: 100%;
     overflow-x: hidden;
+    background: #F3F3F3;
+}
+
+.main, .footer {
+    max-width: 100%;
+    width: 1800px;
+    margin: auto;
+}
+
+.main {
+    background: white;
 }
 
 .link {
@@ -30,15 +41,17 @@
 .header {
     position: fixed;
     top: 0;
-    left: 0;
+    left: 50%;
+    transform: translateX(-50%);
     width: 100%;
+    max-width: 1800px;
     height: max-content;
     padding: 40px;
-    margin: auto;
     box-sizing: border-box;
     max-height: 100%;
 
     z-index: 3;
+    overflow: hidden;
 }
 
 .header * {
@@ -54,7 +67,7 @@
     color: var(--secondary-color);
     max-height: 500px;
 
-    transition: max-height, opacity, background-color;
+    transition: max-height, opacity;
     transition-duration: 0.2s;
     transition-timing-function: linear;
 
@@ -88,6 +101,7 @@
 .header__search, .header__cart {
     margin: 2px 20px 0 0;
     fill: var(--secondary-color);
+    height: 24px;
 }
 
 .header__search:hover, .header__cart:hover {
@@ -161,7 +175,7 @@
 }
 
 .section__about {
-    background: whitesmoke url('../img/back_girl.png') no-repeat center;
+    background: #F3F3F3 url('../img/back_girl.png') no-repeat center;
     background-size: cover;
 }
 
@@ -348,10 +362,11 @@
     width: 80%;
     margin: auto;
     justify-content: space-between;
+    align-items: center;
 }
 
 .section__clients>* {
-    flex: 1 1 150px;
+    flex: 1 1 100px;
     fill: var(--secondary-color);
 }
 
@@ -447,6 +462,7 @@
 .section__contact-us {
     width: 80%;
     margin: auto;
+    position: relative;
 }
 
 .contact-us__btn {

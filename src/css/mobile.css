@@ -62,8 +62,16 @@
     flex-direction: column;
 }
 
+.section__subscribe {
+    padding-bottom: 0;
+}
+
 .subscribe__form {
     text-align: center;
+}
+
+.subscribe__label {
+    display: block;
 }
 
 .subscribe__input {
