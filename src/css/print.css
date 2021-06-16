@@ -1,0 +1,21 @@
+.body * {
+    color: black !important;
+    fill: black;
+    border-color: black !important;
+}
+
+.header, .section__contact-us, .section__subscribe, .expert__video, button {
+    display: none;
+}
+
+.section__about{
+    padding-top: 0 !important;
+}
+
+.contact__card {
+    border: none !important;
+}
+
+.section__about>*, .section>*, .footer *, .section__contact {
+    page-break-inside: avoid;
+}
