@@ -1,3 +1,7 @@
+.body, .body *, .contact__card, .about__feature {
+    background: transparent !important;
+}
+
 .body * {
     color: black !important;
     fill: black;
