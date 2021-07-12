@@ -160,12 +160,12 @@
             </svg>
         </a>
         <strong class="header__brand"><a class="link" href="./" tabindex="1">Indicorp</a></strong>
-        <nav class="header__nav header__nav_active-not">
-            <ul class="list_default">
-                <li><a class="link" href="/home" target="_blank" tabindex="2">Home</a></li>
-                <li><a class="link" href="/product" target="_blank" tabindex="3">Product</a></li>
-                <li><a class="link" href="/pricing" target="_blank" tabindex="4">Pricing</a></li>
-                <li><a class="link" href="/contact" target="_blank" tabindex="5">Contact</a></li>
+        <nav class="header__nav header__nav_active-not nav">
+            <ul class="nav__list">
+                <li><a class="nav__link link" href="/home" target="_blank" tabindex="2">Home</a></li>
+                <li><a class="nav__link link" href="/product" target="_blank" tabindex="3">Product</a></li>
+                <li><a class="nav__link link" href="/pricing" target="_blank" tabindex="4">Pricing</a></li>
+                <li><a class="nav__link link" href="/contact" target="_blank" tabindex="5">Contact</a></li>
             </ul>
         </nav>
     </header>
@@ -247,7 +247,7 @@
                 <strong class="card__heading">A single source of truth</strong>
                 <p class="paragraph">Newton thought that light was made up of particles, but then it was discovered </p>
                 <picture class="advice__image">
-                    <source srcset="src/img/advice1.png 1x" type="image/png">
+                    <source srcset="src/img/advice1.webp 1x" type="image/webp">
                     <img src="src/img/advice1.png" alt="Girl works">
                 </picture>
             </div>
@@ -324,6 +324,7 @@
     </section>
 
     <section class="section section__subscribe">
+        <h2 class="hidden">Subscribe form</h2>
         <form action="" method="POST" class="subscribe__form">
             <label for="user_email" class="subscribe__label">Subscribe For Latest Newsletter</label>
             <input type="email" placeholder="Your Email" id="user_email" name="user_email" class="subscribe__input subscribe__email" size="15"><button type="submit" class="subscribe__input subscribe__submit">Subscribe</button>
@@ -433,6 +434,7 @@
             </div>
         </section>
         <section class="section__copyright">
+            <h2 class="hidden">Copyright and social media</h2>
             <p class="paragraph">Made With Love By <a href="//bouhartsev.top">Matvey Bouhartsev</a></p>
             <a href="//vk.com/bouhartsev" target="_blank">
                 <svg aria-label="Vkontakte" viewBox="0 0 113 113" xmlns="http://www.w3.org/2000/svg" class="copyright__media">

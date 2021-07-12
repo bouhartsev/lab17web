@@ -69,7 +69,7 @@
     overflow: hidden;
 }
 
-.list_default {
+.nav__list {
     margin: 0;
     padding: 0;
     list-style: none;
@@ -538,4 +538,14 @@
     width: 24px;
     height: 24px;
     margin: 0 10px;
+}
+
+.hidden {
+    visibility: hidden;
+
+    /* position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px; */
 }
